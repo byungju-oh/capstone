@@ -26,7 +26,7 @@ def h():
         
         category=get_type(image_bytes=image)        
     
-        return render_template('result.html', resultr=category)
+        return render_template('result.html', result=category)
 
 
 if __name__ == "__main__":
