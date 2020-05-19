@@ -10,7 +10,7 @@
 /* Basic */
 
 	body {
-		background: #708bcf;
+		background: black
 	}
 
 	body, span, input, select, textarea {
@@ -131,6 +131,7 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="file"],
 	textarea {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -151,6 +152,7 @@
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="file"]:focus,
 		textarea:focus {
 			border-color: #d84780;
 		}
@@ -161,7 +163,8 @@
 
 	input[type="text"],
 	input[type="password"],
-	input[type="email"] {
+	input[type="email"],
+	input[type="file"] {
 		line-height: 1em;
 	}
 
