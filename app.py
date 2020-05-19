@@ -12,7 +12,7 @@ from inference import get_type
 
 @app.route('/')
 def main():
-    return render_template('upt.html')
+    return render_template('ex.html')
 
 
 @app.route('/h', methods=['GET','POST'])
