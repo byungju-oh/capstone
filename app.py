@@ -6,10 +6,13 @@ from common import get_tensor
 
 from inference import get_type
 
+# @app.route('/')
+# def main():
+#     return render_template('index.html')
+
 @app.route('/')
 def main():
-    return render_template('index.html')
-
+    return render_template('upt.html')
 
 
 @app.route('/h', methods=['GET','POST'])
