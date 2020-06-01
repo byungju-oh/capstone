@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<!--
+	Phase Shift by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>Phase Shift by TEMPLATED</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.dropotron.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/skel.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/skel-layers.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/init.js') }}"></script>
+
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/skel.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style-wide.css') }}" />
+
+</head>
+
+<body>
+
+    <div id="banner" class="wrapper style2">
+        <section>
+
+            <br><br><br>
+            <a href="{{ url_for('main') }}" class="button medium">hometrain</a>
+        </section>
+    </div>
+    <!-- Wrapper -->
+    <div class="wrapper style1">
+        <!-- Banner -->
+
+
+        <!-- Header -->
+        <div id="header" class="skel-panels-fixed">
+            <div id="logo">
+                <h1><a href="index.html">home</a></h1>
+                <span class="tag">by </span>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li class="active"><a href="index.html">Homepage</a></li>
+                    <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                    <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                    <li><a href="no-sidebar.html">No Sidebar</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <div class="file-upload">
+            <!-- <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add
+                Image</button> -->
+
+            <div class="image-upload-wrap">
+                <input class="file-upload-input" type='file' name="canbe anything" onchange="readURL(this);" accept="image/*" />
+                <div class="drag-text">
+                    <h3>Drag and drop a file or select add Image</h3>
+                </div>
+            </div>
+            <div class="file-upload-content">
+                <img class="file-upload-image" src="#" alt="your image" />
+                <div class="image-title-wrap">
+                    <button type="button" onclick="removeUpload()" class="remove-image">Remove <span
+                            class="image-title">Uploaded Image</span></button>
+                </div>
+            </div>
+            <div class="box">
+                <form method="post" enctype="multipart/form-data"><input type="file" name="canbe anything"><input type="submit"
+                    value="체형분석"></form>
+
+            </div>
+        </div>
+
+
+        <!-- <div id="page" class="container">
+            <section>
+                <header class="major">
+                    <h2>h</h2>
+                    
+                </header>
+                <a href="{{ url_for('h') }}" class="image featured"><img
+                    src="{{ url_for('static',filename='images/bo.jpg') }}" alt=""></a>
+                <div class="box">
+                    <form method="post" enctype="multipart/form-data"><input type="file" name="canbe anything"> <input type="submit"
+                        value="체형분석"></form>
+
+                </div>
+            </section>
+        </div> -->
+
+
+
+
+
+        <!-- Main -->
+        <div id="main">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Content -->
+                    <div class="6u">
+                        <section>
+                            <ul class="style">
+                                <li class="fa fa-wrench">
+                                    <h3>Integer ultrices</h3>
+                                    <span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas
+                                        ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat.
+                                        Maecenas condimentum enim tincidunt risus accumsan.</span>
+                                </li>
+                                <li class="fa fa-leaf">
+                                    <h3>Aliquam luctus</h3>
+                                    <span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas
+                                        ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat.
+                                        Maecenas condimentum enim tincidunt risus accumsan.</span>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="6u">
+                        <section>
+                            <ul class="style">
+                                <li class="fa fa-cogs">
+                                    <h3>Integer ultrices</h3>
+                                    <span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas
+                                        ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat.
+                                        Maecenas condimentum enim tincidunt risus accumsan.</span>
+                                </li>
+                                <li class="fa fa-road">
+                                    <h3>Aliquam luctus</h3>
+                                    <span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas
+                                        ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat.
+                                        Maecenas condimentum enim tincidunt risus accumsan.</span>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.image-upload-wrap').hide();
+
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+
+                    $('.image-title').html(input.files[0].name);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function () {
+            $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function () {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+
+    </script>
+
+</body>
+
+</html>

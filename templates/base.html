@@ -31,7 +31,7 @@
 		<section>
 			
 			<br><br><br>
-						<a href="#" class="button medium">hometrain</a>
+						<a href="{{ url_for('main') }}" class="button medium">hometrain</a>
 		</section>
 	</div>
 	<!-- Wrapper -->
@@ -42,18 +42,19 @@
 		<!-- Header -->
 		<div id="header" class="skel-panels-fixed">
 			<div id="logo">
-				<h1><a href="index.html">Phase Shift</a></h1>
-				<span class="tag">by TEMPLATED</span>
+				<h1><a href="index.html">home</a></h1>
+				<span class="tag">by </span>
 			</div>
 			<nav id="nav">
 				<ul>
 					<li class="active"><a href="index.html">Homepage</a></li>
-					<li><a href="left-sidebar.html">Left Sidebar</a></li>
-					<li><a href="right-sidebar.html">Right Sidebar</a></li>
-					<li><a href="no-sidebar.html">No Sidebar</a></li>
+					<li><a href="left-sidebar.html">체형</a></li>
+					<li><a href="right-sidebar.html">자세</a></li>
+					<li><a href="no-sidebar.html">식단</a></li>
 				</ul>
 			</nav>
 		</div>
+		
 
 		
 		<!-- Extra -->
@@ -63,22 +64,22 @@
 					<section class="4u"> <a href="{{ url_for('h') }}" class="image featured"><img
 								src="{{ url_for('static',filename='images/bo.jpg') }}" alt=""></a>
 						<div class="box">
-							<p>체형 측정</p>
-							<a href="{{ url_for('h') }}" class="button">Read More</a>
+							
+							<a href="{{ url_for('h') }}" class="button">체형 측정</a>
 						</div>
 					</section>
-					<section class="4u"> <a href="#" class="image featured"><img
+					<section class="4u"> <a href="{{ url_for('mn') }}" class="image featured"><img
 								src="{{ url_for('static',filename='images/mm.png') }}" alt=""></a>
 						<div class="box">
-							<p>자세 교정</p>
-							<a href="#" class="button">Read More</a>
+							
+							<a href="{{ url_for('mn') }}" class="button">자세 교정</a>
 						</div>
 					</section>
 					<section class="4u"> <a href="#" class="image featured"><img
 								src="{{ url_for('static',filename='images/ff.jpg') }}" alt=""></a>
 						<div class="box">
-							<p>식단</p>
-							<a href="#" class="button">Read More</a>
+							
+							<a href="#" class="button">식 단</a>
 						</div>
 					</section>
 				</div>
