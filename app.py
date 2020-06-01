@@ -26,6 +26,12 @@ def s():
 
     return render_template('s.html')
 
+@app.route('/ex')
+def ex():
+    
+
+    return render_template('ex.html')
+
 
 @app.route('/h', methods=['GET','POST'])
 
