@@ -26,11 +26,6 @@ def s():
 
     return render_template('s.html')
 
-@app.route('/ex')
-def ex():
-    
-
-    return render_template('ex.html')
 
 
 @app.route('/h', methods=['GET','POST'])
@@ -65,6 +60,11 @@ def h():
         elif category=='정상여자':
             return render_template('result5.html', result=category)
 
+@app.route('/ex')
+def ex():
+    
+
+    return render_template('ex.html')
 
 
 if __name__ == "__main__":
