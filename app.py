@@ -15,7 +15,7 @@ def main():
     return render_template('base.html')
 
 
-@app.route('/eff')
+@app.route('/e')
 def mn():
     
 
