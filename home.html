@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="Ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>DAILY HEALTH</title>
+	<!-- Description, Keywords and Author -->
+	<meta name="description" content="Your description">
+	<meta name="keywords" content="Your,Keywords">
+	<meta name="author" content="ResponsiveWebInc">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Styles -->
+	<!-- Bootstrap CSS -->
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+	<!-- Font awesome CSS -->
+	<link href="{{ url_for('static', filename='css/font-awesome.min.css')}}" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="#">
+</head>
+
+<body>
+
+
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- banner -->
+		<div class="banner">
+			<div class="container">
+				<!-- banner content -->
+				<div class="banner-content">
+					<!-- logo image -->
+			
+					<a href="/">
+						<p>DAILY HEALTH</p>
+						<div class="additional">
+							<!-- short paragraph -->
+							<p>change your body!</p>
+							<!-- button link -->
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-default navbar" id="my-navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="" class="navbar-brand">Daily Health</a>
+				</div><!-- Navbar Header -->
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#home">HOME</a></li>
+						<li><a href="#training">EXERCISE</a></li>
+						<li><a href="#">DIET</a></li>
+						<li><a href="#">TEAM</a></li>
+					</ul>               		
+				</div>
+			</div><!-- End Container -->
+	 </nav><!-- End Navbar -->
+
+		<!-- feature block -->
+		<div class="feature">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<!-- feature item -->
+						<div class="feature-item">
+							<!-- icon -->
+							<a href="check"><i class="fa fa-crosshairs"></i></a>
+							<!-- heading -->
+							<h4>BODY CHECK</h4>
+							<!-- paragraph -->
+							<p>체형분석 바로가기</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<!-- feature item -->
+						<div class="feature-item">
+							<!-- icon -->
+							<a href="guide"><i class="fa fa-sitemap"></i></a>
+							<!-- heading -->
+							<h4>EXERCISE</h4>
+							<!-- paragraph -->
+							<p>운동 바로가기</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<!-- feature item -->
+						<div class="feature-item">
+							<!-- icon -->
+							<a href="oneclick"><i class="fa fa-terminal"></i></a>
+							<!-- heading -->
+							<h4>DIET</h4>
+							<!-- paragraph -->
+							<p>식단 바로가기</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<!-- navigation link -->
+				<p class="nav-link"><a href="#">Contact</a> &nbsp;|&nbsp; <a href="#">Downloads</a> &nbsp;|&nbsp; <a
+						href="#">Email</a> &nbsp;|&nbsp; <a href="#">Support</a> &nbsp;|&nbsp; <a href="#">Privacy
+						Policy</a></p>
+				<!-- copy right -->
+				<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
+				<p class="copy-right">Copyright &copy; 2014 <a href="#">Your Site</a> | Designed By : <a
+						href="http://www.indioweb.in/portfolio">IndioWeb</a>, All rights reserved. </p>
+			</div>
+		</footer>
+
+
+	</div>
+
+
+	<!-- Javascript files -->
+	<!-- jQuery -->
+	<script src="{{ url_for('static', filename='js/jquery.js')}}"></script>
+	<!-- Bootstrap JS -->
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<!-- Respond JS for IE8 -->
+	<script src="{{ url_for('static', filename='js/respond.min.js')}}"></script>
+	<!-- HTML5 Support for IE -->
+	<script src="{{ url_for('static', filename='js/html5shiv.js')}}"></script>
+	<!-- Custom JS -->
+	<script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+</body>
+
+</html>
